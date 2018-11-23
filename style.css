@@ -4,18 +4,19 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Open Sans;
+    font-family: 'Montserrat', sans-serif;
 }
 .header .container{
-    height: 275px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 40px;
 }
 .top{
+    margin-top: 32px;
     display: flex;
-    height: 90px;
+}
+.logo h1{
+    font-family: 'Montserrat', sans-serif;
 }
 .menu-top{
     display: -webkit-inline-flex;
@@ -44,6 +45,8 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 19px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .menu-top a:hover{
     color: #5bdd9f;
@@ -72,15 +75,15 @@ body{
 }
 
 .title{
-    font-family: Open Sans;
+    font-family: 'Montserrat', sans-serif;
     color:  #3e3e3e;
     font-size: 30px;
-    font-weight: 700;
-    line-height: 20px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    margin-top: 130px;
 }
 .nav{
     font-size: 14px;
@@ -208,7 +211,7 @@ body{
 .widget-tittle{
     margin-top: 60px;
     margin-bottom: 40px;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 .widget-recent li{
