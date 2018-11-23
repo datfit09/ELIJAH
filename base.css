@@ -1,0 +1,23 @@
+.clearfix:after,
+.container:after
+{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+html[xmlns] .clearfix,
+html[xmlns] .container
+{
+  display: block;
+}
+
+* html .clearfix,
+* html .container
+{
+  height: 1%;
+}
