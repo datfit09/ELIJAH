@@ -164,7 +164,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px 0;
+    padding: 100px 0;
 }
 .name1 {
     display: flex;
@@ -454,7 +454,7 @@ blockquote {
     background-color: #e4f4ee;
     width: 370px;
     height: 50px;
-    min-width: 100%;
+    max-width: 100%;
     padding-left: 20px;
     border: 1px solid transparent;
 }
@@ -469,7 +469,8 @@ blockquote {
     padding: 20px;
     border-radius: 3px;
     background-color: #e4f4ee;
-    border: 1px solid transparent;
+    border: 1px solid #dae9e4;
+    margin-top: 20px;
 }
 .message-post button {
     font-family: Oswald;
@@ -589,7 +590,7 @@ blockquote {
     text-align: center;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 .search-form input {
@@ -710,6 +711,7 @@ blockquote {
 .ADVERTISEMENT {
     display: block;
     text-align: center;
+    margin-bottom: 20px;
 }
 .img-adv {
     display: flex;
@@ -782,16 +784,24 @@ blockquote {
 }
 .post-re a {
     text-decoration: none;
+    float: left;
 }
 .post-re {
-    display: block;
+    display: inline-table;
+    float: left;
+    height: 70px;
+    width: 100%;
     margin-bottom: 20px;
-    clear: both;
 }
-.post-re img {}
+.post-re img {
+    float: left;
+    width: 70px;
+    max-width: 100%;
+}
 .posts {
-    float: right;
-    width: 70%;
+    float: left;
+    width: calc( 100% - 90px );
+    margin: -5px 0 0 18px;
 }
 .keywood {
     font-family: Lato;
@@ -822,6 +832,9 @@ blockquote {
     display: block;
     clear: both;
     border-top: 1px solid #494949;
+}
+.social-footer{
+    float: left;
 }
 .social-title {
     font-family: Oswald;
@@ -887,7 +900,7 @@ blockquote {
         margin: 0;
     }
     .tittle-sub h3 a {
-        font-size: larger;
+        font-size: x-large;
     }
     .name1 {
         height: 75px;
@@ -938,7 +951,19 @@ blockquote {
     .topnav .logo1 a {
         font-size: 18px;
     }
+    .widget-title{
+        margin-bottom: 5px;
+    }
+    .footer{
+        padding-top: 40px;
+    }
+    .avatar-author{
+        top: -25px;
+    }
+
+
 }
+
 @media (max-width: 600px) {
     .form2 textarea {
         width: 100%;
@@ -997,6 +1022,7 @@ blockquote {
     }
 }
 @media ( max-width: 768px) {
+
     .menu a {
         padding: 10px 3px;
     }
@@ -1028,24 +1054,82 @@ blockquote {
         padding: 20px 0;
     }
     .tittle-sub h3 a {
-        font-size: -webkit-xxx-large;
+        font-size: x-large;
     }
     .tittle-sub h4 {
         font-size: 18px;
+        padding: 0 20px;
+    }
+    .tittle-post a{
+        font-size: 20px;
+    }
+    .comment-total-title{
+        padding: 25px 20px;
     }
     .name1 {
         -webkit-background-size: 35%;
-        background-size: 35%;
+        background-size: 32%;
+        height: 160px;
+    }
+    .description h2{
+        width: 95%;
+        font-size: larger;
+    }
+    .post-content{
+        margin: 0 20px;
     }
     #main {
         padding-top: 45px;
     }
-    .img-adv-2 {
+    .img-adv-2, .img-adv-3  {
         margin: 0;
     }
-    .img-adv-3 {
-        margin: 0;
+    .one {
+        padding: 0 10px;
     }
+    .post-meta a, .post-meta-item a{
+        font-size: 10px;
+    }
+    
+    .button-reg, .message-post button{
+        font-size: 12px;
+        margin: 20px 7px;
+        width: 95%;
+        text-align: center;
+    }
+    .content4, .form-register{
+        padding-bottom: 20px;
+    }
+
+    .pre-tab, .next-tab{
+        font-size: 14px;
+    }
+    .pre-sub, .next-sub{
+        font-size: 10px;
+    }
+
+    .widget-recent-table a{
+        font-size: 14px;
+    }
+    .socialft{
+        font-size: 23px;
+        float: left;
+        margin-left: 21px;
+    }
+    .ft-copyright{
+        height: 40px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .comment-list .massage {
+        margin: 15px;
+    }
+    .form1 input {
+        margin: 10px 0;
+        max-width: 90%;
+    }
+
 }
 
 .toggle-menu-btn {
@@ -1077,8 +1161,7 @@ blockquote {
     pointer-events: auto;
 }
 @media ( min-width: 992px) {
-    .toggle-menu-btn,
-    .btn-close {
+    .toggle-menu-btn, .button-close {
         display: none !important;
     }
 }
@@ -1102,9 +1185,9 @@ blockquote {
         pointer-events: none;
         position: fixed;
         top: 0;
-        bottom: 0;
         right: 0;
-        width: 300px;
+        bottom: 0;        
+        width: 260px;
         z-index: 100;
         background: #fff;
         color: #000;
