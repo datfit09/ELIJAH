@@ -71,7 +71,7 @@ function navScroll() {
 function gallery() {
     var iso = $( '.portfolio-content' ).isotope({
         itemSelector: '.por-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
     });
 
     var btn = jQuery( '.portfolio-button' );
