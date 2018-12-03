@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
- 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script src="js/jquery.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/menu.js"></script>
+    <!-- Slide dong js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/all-option.js"></script>
+    <!-- Progress Bar anh dong phan tram js -->
+    <script src="js/in-viewport.js"></script>
+    <script src="js/numscroller-1.0.js"></script>
 </head>
 <body>
 <header class="header">
@@ -139,28 +146,28 @@
             <h2 class="title-fun-fact">HERE’S SOME INTERESTING NUMBERS ABOUT US</h2>
             <div class="row">
                 <div class="col-md-3 fun-fact">
-                    <h3 class="count-fun">386</h3>
+                    <h3 class="numscroller" data-min='1' data-max='386' data-delay='5' data-increment='10'>386</h3>
                     <h4 class="title-fun">PROJECTS COMPLETED</h3>
                     <p class="sub-fun">
                         Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.
                     </p>
                 </div>
                 <div class="col-md-3 fun-fact">
-                    <h3 class="count-fun">291</h3>
+                    <h3 class="numscroller" data-min='1' data-max='291' data-delay='5' data-increment='10'>291</h3>
                     <h4 class="title-fun">CLIENTS SERVED</h3>
                     <p class="sub-fun">
                         Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.
                     </p>
                 </div>
                 <div class="col-md-3 fun-fact">
-                    <h3 class="count-fun">3925</h3>
+                    <h3 class="numscroller" data-min='1' data-max='3925' data-delay='5' data-increment='30'>3925</h3>
                     <h4 class="title-fun">SONGS PLAYED</h3>
                     <p class="sub-fun">
                         Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.
                     </p>
                 </div>
                 <div class="col-md-3 fun-fact">
-                    <h3 class="count-fun">6740</h3>
+                    <h3 class="numscroller" data-min='1' data-max='6740' data-delay='5' data-increment='30'>6740</h3>
                     <h4 class="title-fun">COFFEE CUPS</h3>
                     <p class="sub-fun">
                         Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.
@@ -272,15 +279,24 @@
 
         </div>
 
-        <div class="quote twitter-quote">
-            <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
-            <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
-            <div class="author-quote twitter-author">_ Mark Hain</div>
-            <span class="time-quote">about 1 hour ago</span>
-            <div class="slider">
-                <a href="#"><span class="icon-slider fa fa-circle"></span></a>
-                <a href="#"><span class="icon-slider fa fa-circle"></span></a>
-                <a href="#"><span class="icon-slider fa fa-circle"></span></a>
+        <div class="testimonial-carousel">
+            <div class="quote twitter-quote">
+                <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
+                <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
+                <div class="author-quote twitter-author">_ Mark Hain</div>
+                <span class="time-quote">about 1 hour ago</span>
+            </div>
+            <div class="quote twitter-quote">
+                <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
+                <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
+                <div class="author-quote twitter-author">_ Mark Hain</div>
+                <span class="time-quote">about 1 hour ago</span>
+            </div>
+            <div class="quote twitter-quote">
+                <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
+                <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
+                <div class="author-quote twitter-author">_ Mark Hain</div>
+                <span class="time-quote">about 1 hour ago</span>
             </div>
         </div>
     </div>

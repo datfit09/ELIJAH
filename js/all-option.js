@@ -94,15 +94,35 @@ function gallery() {
     } );
 }
 
+// Progress Bar anh dong phan tram
+function progressBar() {
+    $( '.skill' ).inViewport( function() {
+        $( this ).addClass( 'active' );
+    } );
+}
+
+// Slide dong
+function slide() {
+    jQuery( '.testimonial-carousel' ).slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+    });
+}
+
+
 (function($) {
     $( document ).ready( function() {
         jQuery( window ).on( 'load', function() {
             navFixed();
             gallery();
+            progressBar();
         } );
 
         toggleMenu();
         navScroll();
+        slide();
     } );
 
     // Menu tren mobile.

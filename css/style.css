@@ -87,14 +87,15 @@ img {
     color: #fff;
 }
 /*Nav top*/
-.topnav-box{
+
+.topnav-box {
     height: 88px;
 }
 .topnav {
     border-bottom: 4px double #e7e7e7;
     background-color: #fff;
 }
-.topnav.active{
+.topnav.active {
     position: fixed;
     left: 0;
     top: 0;
@@ -906,7 +907,6 @@ blockquote {
     text-align: right;
     text-decoration: none;
 }
-
 /*---------------------------------HOME PAGE--------------------------------------------*/
 
 /*-------------------------About US------------------------------*/
@@ -1023,6 +1023,7 @@ blockquote {
     display: flex;
     justify-content: space-between;
     background-color: #566065;
+    position: relative;
 }
 .skill-title {
     font-family: Lato;
@@ -1032,8 +1033,10 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
     background-color: #f89a3d;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .skill-value {
     font-family: Lato;
@@ -1045,16 +1048,24 @@ blockquote {
     flex-grow: 1;
     padding-right: 10px;
 }
-.skill li:first-child .skill-title {
+.skill li .skill-title {
+    width: 0;
+    transition-duration: 1.5s;
+    padding: 0;
+}
+.active.skill li .skill-title {
+    padding: 0 10px;
+}
+.active.skill li:first-child .skill-title {
     width: 90%;
 }
-.skill li:nth-child(2) .skill-title {
+.active.skill li:nth-child(2) .skill-title {
     width: 85%;
 }
-.skill li:nth-child(3) .skill-title {
+.active.skill li:nth-child(3) .skill-title {
     width: 70%;
 }
-.skill li:last-child .skill-title {
+.active.skill li:last-child .skill-title {
     width: 95%;
 }
 .title-fun-fact {
@@ -1068,7 +1079,7 @@ blockquote {
 .fun-fact {
     text-align: center;
 }
-.count-fun {
+.numscroller {
     font-family: Oswald;
     color: #f89a3d;
     font-size: 60px;
@@ -1094,11 +1105,10 @@ blockquote {
 .tittle-sub h4 span {
     color: #f89a3d;
 }
-
-.member-avatar{
+.member-avatar {
     position: relative;
 }
-.member-avatar .aaaa:after{
+.member-avatar .aaaa:after {
     content: "";
     position: absolute;
     top: 0;
@@ -1110,17 +1120,16 @@ blockquote {
     visibility: hidden;
     transition-duration: 0.3s;
 }
-.member-item:hover .member-avatar a:after{
+.member-item:hover .member-avatar a:after {
     visibility: visible;
     opacity: 1;
 }
-.member-item:hover .member-view{
+.member-item:hover .member-view {
     visibility: visible;
     opacity: 1;
     transform: translateY(-50%);
-} 
-
-.member-avatar img{
+}
+.member-avatar img {
     opacity: 1;
     display: block;
     width: 100%;
@@ -1128,19 +1137,19 @@ blockquote {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-.member-view{
+.member-view {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 0;
-    right: 0; 
+    right: 0;
     transform: translateY(0);
     text-align: center;
     text-decoration: none;
     font-family: Oswald;
     text-transform: uppercase;
-    color:  #fff;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -1148,7 +1157,6 @@ blockquote {
     background-color: rgba(86, 96, 101, 0.4);
     width: 100%;
 }
-
 .member-content {
     padding: 0 20px;
     background-color: #fff;
@@ -1224,7 +1232,8 @@ blockquote {
     pointer-events: none;
     transition-duration: 0.3s;
     transform: translate( -50%, 30px);
-    white-space: nowrap; /*khong xuong dong*/
+    white-space: nowrap;
+    /*khong xuong dong*/
 }
 /*------------------------mui ten tooltip-----------------------*/
 
@@ -1255,21 +1264,15 @@ blockquote {
     color: #f89a3d;
 }
 .time-quote {
+    display: block;
     font-family: Lato;
-    color:  #f89a3d;
+    color: #f89a3d;
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
     line-height: 30px;
     margin-bottom: 50px;
-}
-.author-quote.twitter-author{
-    font-family: Oswald;
-    color:  #ffffff;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 30px;
-    margin: 0;
+    text-align: center;
 }
 .twitter-quote {
     background: url(../image/twitter.jpg);
@@ -1280,18 +1283,31 @@ blockquote {
     flex-direction: column;
     padding: 100px 0;
 }
-.icon-quote.twitter-icon{
+.icon-quote.twitter-icon {
     margin: 0 0 40px 0;
-}
-.slider{
     text-align: center;
 }
-.icon-slider{
-    font-size: 9px;
-    color: #a19d99;
+.author-quote.twitter-author {
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
 }
-.icon-slider:hover{
-    color: #fff;
+.testimonial-carousel .slick-arrow {
+    z-index: 10;
+}
+.testimonial-carousel .slick-prev {
+    left: 25px;
+}
+.testimonial-carousel .slick-next {
+    right: 25px;
+}
+.testimonial-carousel .slick-dots {
+    bottom: 100px;
+    z-index: 10;
 }
 /*---------------------------------Service-----------------------------*/
 
@@ -1311,12 +1327,11 @@ blockquote {
     font-weight: 400;
     line-height: 18px;
 }
-@media ( min-width: 375px ){
-    .service-name{
+@media ( min-width: 375px) {
+    .service-name {
         font-size: 22px;
     }
 }
-
 .service-info {
     font-family: Lato;
     color: #566065;
@@ -1353,7 +1368,7 @@ blockquote {
     margin-left: -20px;
     z-index: 10;
 }
-.testimonial-text p{
+.testimonial-text p {
     position: relative;
     padding: 40px 30px;
     z-index: 20;
@@ -1368,7 +1383,7 @@ blockquote {
     position: absolute;
     border-radius: 100%;
     background-color: #c5c5c5;
-    filter: blur( 3px );
+    filter: blur( 3px);
     z-index: 1;
 }
 .testimonial {
@@ -1380,8 +1395,7 @@ blockquote {
 .testimonial-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 40px 0 0;
+    margin-right: 20%;
 }
 .testimonial-info-name {
     font-family: Open Sans;
@@ -1448,8 +1462,7 @@ blockquote {
     border-radius: 18px;
     border-bottom: 3px solid #d8802a;
 }
-.portfolio-nav a:hover,
-.portfolio-nav a.active {
+.portfolio-nav a:hover, .portfolio-nav a.active {
     background-color: #d8802a;
     border-bottom: 3px solid #f89a3d;
     color: #000;
@@ -1457,20 +1470,18 @@ blockquote {
 }
 /*image portfolio*/
 
-.portfolio-content {
-
-}
-.por-item{
+.portfolio-content {}
+.por-item {
     overflow: hidden;
     transition-duration: 0s;
     max-width: 25%;
 }
-@media ( min-width: 1200px ){
-    .por-item{
+@media ( min-width: 1200px) {
+    .por-item {
         max-width: 20%;
     }
 }
-.por-item img{
+.por-item img {
     transition-duration: 0.3s;
     width: 100%;
 }
@@ -1539,7 +1550,6 @@ blockquote {
     z-index: 10;
     box-shadow: 0px 5px 24px 6px rgba(0, 0, 0, 0.3);
 }
-
 .pricing-item:hover .pri-unit {
     background-color: #fff;
     color: #f89a3d;
@@ -1547,10 +1557,10 @@ blockquote {
 .pricing-item:hover .pri-name {
     color: #fff;
 }
-.pricing-item:hover .pri-content li{
+.pricing-item:hover .pri-content li {
     background-color: rgb(253, 218, 136);
 }
-.pricing-item:hover .pri-sign{
+.pricing-item:hover .pri-sign {
     color: #f89a3d;
     background-color: #ffffff;
 }
@@ -1613,7 +1623,7 @@ blockquote {
     flex-grow: 1;
     background-color: #f6f6f6;
 }
-.pri-content li+li{
+.pri-content li+li {
     margin-top: 1px;
 }
 .price {
@@ -1631,7 +1641,6 @@ blockquote {
     background-color: #566065;
     text-decoration: none;
 }
-
 /*-------------------------Contact form-------------------*/
 
 #section-contact .tittle-sub .container {
@@ -1670,8 +1679,6 @@ blockquote {
     height: 50px;
     margin-bottom: 20px;
 }
-
-
 .contact-map .form textarea {
     height: 130px;
 }
@@ -1689,17 +1696,18 @@ blockquote {
     height: 47px;
     cursor: pointer;
 }
-@media ( max-width: 375px ){
-    .contact-map button{
+@media ( max-width: 375px) {
+    .contact-map button {
         width: 300px;
     }
-    .contact-map .form input, textarea{
+    .contact-map .form input, textarea {
         width: 300px;
     }
 }
-
 /*---------------------------------------------Responsive-------------------------------------------------------------------------------------*/
+
 /*---------------------------------------------------Responsive 400px-----------------------------------------------*/
+
 @media (max-width: 400px) {
     .comment-avatar, .comment-content {
         width: 100%;
@@ -1773,15 +1781,15 @@ blockquote {
         top: -25px;
     }
     /*--------------------------HomePage-----------------------*/
-    .icon-quote{
+    .icon-quote {
         margin: 0;
     }
-    .sub-quote{
+    .sub-quote {
         width: 100%;
         font-size: 20px;
         margin: 5px;
     }
-    .author-quote{
+    .author-quote {
         font-size: 18px;
         margin: 5px;
     }
@@ -1791,36 +1799,36 @@ blockquote {
         padding: 0;
         margin: 0 15px;
     }
-    .por-item img{
+    .por-item img {
         max-width: 400px;
     }
-    
     .portfolio-nav a {
-    padding: 5px 8px;
-    font-size: 15px;
-    font-weight: 100;
-    border-radius: 15px;
+        padding: 5px 8px;
+        font-size: 15px;
+        font-weight: 100;
+        border-radius: 15px;
     }
     .portfolio-button {
         margin-left: 5px;
     }
-    .pricing-info{
+    .pricing-info {
         height: auto;
     }
-    .pricing-title{
+    .pricing-title {
         font-size: 30px;
         line-height: 2;
     }
-    .pricing-adress{
+    .pricing-adress {
         width: 100%;
         font-size: 20px;
         padding: 0;
     }
-    .pricing-contact a, .pricing-contact span{
+    .pricing-contact a, .pricing-contact span {
         font-size: 18px;
     }
 }
 /*-------------------------------------------------------------Responsive 660px-----------------------------------------------*/
+
 @media (max-width: 600px) {
     .form2 textarea {
         width: 100%;
@@ -1836,6 +1844,7 @@ blockquote {
     }
 }
 /*------------------------------------------------------Responsive 720px-------------------------------------------------------*/
+
 @media ( max-width: 720px) {
     .logo {
         margin-top: 10px;
@@ -1878,13 +1887,14 @@ blockquote {
         -webkit-background-size: 35%;
         background-size: 35%;
     }
-    .pricing-adress{
+    .pricing-adress {
         width: 100%;
         font-size: 25px;
         padding: 20px 0;
     }
 }
 /*---------------------------------------------------Responsive 768px-----------------------------------------------*/
+
 @media ( max-width: 768px) {
     .menu a {
         padding: 10px 3px;
@@ -2018,6 +2028,7 @@ blockquote {
     pointer-events: auto;
 }
 /*------------------------------------------------------Responsive 992px-----------------------------------------------*/
+
 @media ( min-width: 992px) {
     .toggle-menu-btn, .button-close {
         display: none !important;
@@ -2037,6 +2048,7 @@ blockquote {
     pointer-events: none
 }
 /*---------------------------------------------------------Responsive 991px-----------------------------------------------*/
+
 @media ( max-width: 991px) {
     .topnav .menu {
         visibility: hidden;
@@ -2070,37 +2082,43 @@ blockquote {
     }
 }
 /*------------------------------Responrsive 670px-----------------------------*/
-@media ( min-width: 670px ){
-    .sub-quote{
-        width: 100%;
-    }
-}
 
-@media ( min-width: 401px ){
-    .sub-quote{
+@media ( min-width: 670px) {
+    .sub-quote {
         width: 100%;
     }
 }
-@media ( max-width: 580px ){
-    .portfolio-nav a{
+@media ( min-width: 401px) {
+    .sub-quote {
+        width: 100%;
+    }
+}
+@media ( max-width: 580px) {
+    .portfolio-nav a {
         font-size: 20px;
         padding: 5px;
     }
-    .sub-quote{
+    .sub-quote {
         margin: 0;
         font-size: 18px;
     }
 }
-@media ( max-width: 375px ){
-    .portfolio-nav a{
+@media ( max-width: 375px) {
+    .portfolio-nav a {
         font-size: 14px;
         padding: 5px 4px;
         border-radius: 10px;
     }
-    .por-item img{
+    .por-item img {
         width: 100%;
     }
     .pricing-contact a, .pricing-contact span {
         font-size: 15px;
+    }
+    .flickr-img {
+        margin-right: 3px;
+    }
+    .testimonial-info {
+        margin-right: 40%;
     }
 }
