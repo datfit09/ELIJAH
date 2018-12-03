@@ -231,6 +231,7 @@ img {
 }
 .block {
     background-color: #f6f6f6;
+    overflow-x: hidden;
 }
 .content1 {
     background-color: #fff;
@@ -1310,6 +1311,12 @@ blockquote {
     font-weight: 400;
     line-height: 18px;
 }
+@media ( min-width: 375px ){
+    .service-name{
+        font-size: 22px;
+    }
+}
+
 .service-info {
     font-family: Lato;
     color: #566065;
@@ -1323,7 +1330,6 @@ blockquote {
     margin-bottom: 100px;
 }
 .testimonial-text {
-    padding: 40px 30px;
     background-color: #fff;
     font-family: OpenSansLight;
     color: #282828;
@@ -1345,6 +1351,25 @@ blockquote {
     border-top-color: #fff;
     border-width: 20px;
     margin-left: -20px;
+    z-index: 10;
+}
+.testimonial-text p{
+    position: relative;
+    padding: 40px 30px;
+    z-index: 20;
+    background-color: #FFF;
+}
+.testimonial-text:after {
+    bottom: -7px;
+    left: 5px;
+    content: "";
+    height: 25px;
+    width: 100px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #c5c5c5;
+    filter: blur( 3px );
+    z-index: 1;
 }
 .testimonial {
     display: flex;
@@ -1438,13 +1463,16 @@ blockquote {
 .por-item{
     overflow: hidden;
     transition-duration: 0s;
+    max-width: 25%;
+}
+@media ( min-width: 1200px ){
+    .por-item{
+        max-width: 20%;
+    }
 }
 .por-item img{
     transition-duration: 0.3s;
-    max-width: 400px;
-}
-.por-item:hover img {
-    
+    width: 100%;
 }
 /*------------------------------PRICING----------------------------------------*/
 
@@ -1626,7 +1654,7 @@ blockquote {
     padding: 50px;
 }
 .contact-map .form {
-    min-width: 430px;
+    max-width: 430px;
 }
 .contact-map .form input, textarea {
     font-family: Lato;
@@ -1638,10 +1666,12 @@ blockquote {
     border-radius: 3px;
     box-sizing: border-box;
     padding-left: 20px;
-    width: 100%;
+    width: 430px;
     height: 50px;
     margin-bottom: 20px;
 }
+
+
 .contact-map .form textarea {
     height: 130px;
 }
@@ -1659,8 +1689,16 @@ blockquote {
     height: 47px;
     cursor: pointer;
 }
+@media ( max-width: 375px ){
+    .contact-map button{
+        width: 300px;
+    }
+    .contact-map .form input, textarea{
+        width: 300px;
+    }
+}
 
-/*---------------------------------------------Responsive------------------------------------------------------------------------------------------*/
+/*---------------------------------------------Responsive-------------------------------------------------------------------------------------*/
 /*---------------------------------------------------Responsive 400px-----------------------------------------------*/
 @media (max-width: 400px) {
     .comment-avatar, .comment-content {
@@ -1751,6 +1789,7 @@ blockquote {
         width: 100%;
         height: 450px;
         padding: 0;
+        margin: 0 15px;
     }
     .por-item img{
         max-width: 400px;
@@ -2054,8 +2093,9 @@ blockquote {
 }
 @media ( max-width: 375px ){
     .portfolio-nav a{
-        font-size: 15px;
-        padding: 3px;
+        font-size: 14px;
+        padding: 5px 4px;
+        border-radius: 10px;
     }
     .por-item img{
         width: 100%;
