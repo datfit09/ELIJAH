@@ -2121,4 +2121,8 @@ blockquote {
     .testimonial-info {
         margin-right: 40%;
     }
+    .por-item {
+        max-width: 100%;
+        padding: 0 15px;
+    }
 }
