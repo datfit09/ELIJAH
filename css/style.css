@@ -940,6 +940,7 @@ blockquote {
     font-size: 24px;
     font-weight: 400;
     padding: 25px 0 20px 0;
+    text-transform: uppercase;
 }
 .future-tittle:hover {
     color: #f89a3d;
@@ -992,6 +993,10 @@ blockquote {
     width: 700px;
     margin: 40px 0;
     text-align: center;
+}
+.sub-quote a span{
+    text-decoration: none;
+    color: #f89a3d;
 }
 .author-quote {
     font-family: Oswald;
@@ -1069,6 +1074,7 @@ blockquote {
     width: 95%;
 }
 .title-fun-fact {
+    text-transform: uppercase;
     font-family: Oswald;
     color: #566065;
     font-size: 36px;
@@ -1274,9 +1280,28 @@ blockquote {
     margin-bottom: 50px;
     text-align: center;
 }
-.twitter-quote {
+.owl-carousel.owl-theme{
     background: url(../image/twitter.jpg);
     background-size: cover;
+}
+.owl-dots{
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+}
+.owl-carousel button.owl-dot {
+    background-color: #959391 !important;
+    padding: 5px!important;
+    font-size: 16px!important;
+    margin-left: 10px!important;
+    border-radius: 50%;
+}
+.owl-carousel button.owl-dot:hover , .owl-carousel button.owl-dot.active{
+    background-color: #fff !important;
+}
+
+.twitter-quote {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1309,6 +1334,7 @@ blockquote {
     bottom: 100px;
     z-index: 10;
 }
+
 /*---------------------------------Service-----------------------------*/
 
 .services-item {
@@ -1723,6 +1749,7 @@ blockquote {
         font-size: x-large;
     }
     .name1 {
+        text-transform: uppercase;
         height: 75px;
     }
     .comment-list {

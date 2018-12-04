@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- Reponsiveslides -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -17,12 +20,16 @@
     
     <script src="js/jquery.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <!-- Slide dong js -->
+    <!-- thu vien slick Slide dong js -->
     <script src="js/slick.min.js"></script>
-    <script src="js/all-option.js"></script>
     <!-- Progress Bar anh dong phan tram js -->
     <script src="js/in-viewport.js"></script>
     <script src="js/numscroller-1.0.js"></script>
+    <!-- thu vien slide OwlCarousel2 dong js-->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Tat ca khai bao js -->
+    <script src="js/all-option.js"></script>
 </head>
 <body>
 <header class="header">
@@ -49,9 +56,9 @@
                     <li><a href="#section-about">About</a></li>
                     <li><a href="#section-our-team">Team</a></li>
                     <li><a href="#section-service">Service</a></li>
-                    <li><a href="#section-portfolio">PORTFOLIO</a></li>
-                    <li><a href="#section-pricing">PRICING</a></li>
-                    <li><a href="#section-contact">CONTACT</a></li>
+                    <li><a href="#section-portfolio">Portfolio</a></li>
+                    <li><a href="#section-pricing">pricing</a></li>
+                    <li><a href="#section-contact">contact</a></li>
                     <li><a href="#">Page <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                     <li><a href="#">Blog <i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
                     <li><a href="#" class="search-button1"><i class="fa fa-search" aria-hidden="true"></i></a></li>
@@ -78,19 +85,19 @@
             <div class="row">
                 <div class="col-md-4 futures">
                     <div class="future-icon"><a class="icon-future fa fa-files-o"></a></div>
-                    <h3 class="future-tittle active">FLEXIBLE LAYOUT</h3>
+                    <h3 class="future-tittle active">flexible layout</h3>
                     <p class="sub-future">Quisque sem quam, scelerisque nec imperdiet ut, mattis sit amet turpis. Ut cursus sem nulla, consectetur tincidunt mauris tempor nec. Nullam eu purus eget neque pulvinar tempor.</p>
                 </div>
 
                 <div class="col-md-4 futures">
                     <div class="future-icon"><a class="icon-future fa fa-tablet"></a></div>
-                    <h3 class="future-tittle">CROSS BROWSER</h3>
+                    <h3 class="future-tittle">cross browser</h3>
                     <p class="sub-future">Pellentesque vehicula ullamcorper odio quis dictum. Nulla ullamcorper, tortor vel consectetur porttitor, libero orci fringilla sem, non luctus turpis purus varius tellus.</p>
                 </div>
 
                 <div class="col-md-4 futures">
                     <div class="future-icon"><a class="icon-future fa fa-star-o"></a></div>
-                    <h3 class="future-tittle">UNIQUE DESIGN</h3>
+                    <h3 class="future-tittle">unique design</h3>
                     <p class="sub-future">Sed tincidunt interdum bibendum. Nam metus turpis, faucibus nec tortor sed, ultrices porttitor lorem. Vestibulum ante congue. Cras sed luctus nulla mollis interdum lectus.</p>
                 </div>
             </div>
@@ -143,7 +150,7 @@
                 <span>WHAT WE’VE GOT HERE</span>
             </div>
 
-            <h2 class="title-fun-fact">HERE’S SOME INTERESTING NUMBERS ABOUT US</h2>
+            <h2 class="title-fun-fact">here's some interesting numbers about us</h2>
             <div class="row">
                 <div class="col-md-3 fun-fact">
                     <h3 class="numscroller" data-min='1' data-max='386' data-delay='5' data-increment='10'>386</h3>
@@ -197,12 +204,12 @@
                 <div class="col-md-4">
                     <div class="member-item">
                         <div class="member-avatar">
-                            <a href="#" class="aaaa"><img src="image/avatar.jpg" alt=""></a>
+                            <a href="#" class="aaaa"><img src="image/avatar.jpg" alt="title-image"></a>
                             <a class="member-view" href="#" >view profile</a>
                         </div>
                         <div class="member-content">
                             <div class="member-info">
-                                <h3 class="member-name"><a href="">JOHN DOE</a></h3>
+                                <h3 class="member-name"><a href="#">JOHN DOE</a></h3>
                                 <span class="member-position">Founder</span>
                             </div>
                             <p class="member-des">Vestibulum id felis arcu. In suscipit, tortor id accumsan interdum, urna ligula eleifend mi, eu ornare leo dui vitae sem.</p>
@@ -212,12 +219,12 @@
                 <div class="col-md-4">
                     <div class="member-item">
                         <div class="member-avatar">
-                            <a href="#" class="aaaa"><img src="image/avatar.jpg" alt=""></a>
+                            <a href="#" class="aaaa"><img src="image/avatar.jpg" alt="title-image"></a>
                             <a class="member-view" href="#" >view profile</a>
                         </div>
                         <div class="member-content">
                             <div class="member-info">
-                                <h3 class="member-name"><a href="">JOHN DOE</a></h3>
+                                <h3 class="member-name"><a href="#">JOHN DOE</a></h3>
                                 <span class="member-position">Founder</span>
                             </div>
                             <p class="member-des">Vestibulum id felis arcu. In suscipit, tortor id accumsan interdum, urna ligula eleifend mi, eu ornare leo dui vitae sem.</p>
@@ -227,13 +234,13 @@
                 <div class="col-md-4">
                     <div class="member-item">
                         <div class="member-avatar">
-                            <a href="#" class="aaaa"><img src="image/avatar.jpg" alt=""></a>
+                            <a href="#" class="aaaa"><img src="image/avatar.jpg" alt="title-image"></a>
                             <a class="member-view" href="#" >view profile</a>
                         </div>
                         </div>
                         <div class="member-content">
                             <div class="member-info">
-                                <h3 class="member-name"><a href="">JOHN DOE</a></h3>
+                                <h3 class="member-name"><a href="#">JOHN DOE</a></h3>
                                 <span class="member-position">Founder</span>
                             </div>
                             <p class="member-des">Vestibulum id felis arcu. In suscipit, tortor id accumsan interdum, urna ligula eleifend mi, eu ornare leo dui vitae sem.</p>
@@ -247,39 +254,38 @@
             </div>
 
             <div class="container">
-                <h2 class="title-fun-fact">SOME AMAZING CLIENTS WE’RE GLAD TO WORK WITH</h2>
+                <h2 class="title-fun-fact">Some amazing clients we're glad to work with</h2>
                 <h3 class="title-sub">Morbi eget quam at diam auctor laoreet. Curabitur ut turpis elit. Aliquam hendrerit luctus placerat. Suspendisse ut elementum ipsum, et suscipit est. Quisque congue tempor tortor id posuere. Donec viverra sed felis ut vulputate. Mauris vel fermentum lacus, et volutpat turpis.</h3>            
                 <div class="partner">
                     <div class="partner-item">
-                        <a href="#"><img src="image/ubuntu.png" alt=""></a>
+                        <a href="#"><img src="image/ubuntu.png" alt="title-image"></a>
                         <span class="partner-tooltip">ubuntu</span>
                     </div>
                     <div class="partner-item">
-                        <a href="#"><img src="image/archlinux.png" alt=""></a>
+                        <a href="#"><img src="image/archlinux.png" alt="title-image"></a>
                         <span class="partner-tooltip">archlinux</span>
                     </div>
                     <div class="partner-item">
-                        <a href="#"><img src="image/soundcloud.png" alt=""></a>
+                        <a href="#"><img src="image/soundcloud.png" alt="title-image"></a>
                         <span class="partner-tooltip">soundcloud</span>
                     </div>
                     <div class="partner-item">
-                        <a href="#"><img src="image/creative-common.png" alt=""></a>
+                        <a href="#"><img src="image/creative-common.png" alt="title-image"></a>
                         <span class="partner-tooltip">creative-common</span>
                     </div>
                     <div class="partner-item">
-                        <a href="#"><img src="image/nickelodeon.png" alt=""></a>
+                        <a href="#"><img src="image/nickelodeon.png" alt="title-image"></a>
                         <span class="partner-tooltip">nickelodeon</span>
                     </div>
                     <div class="partner-item">
-                        <a href="#"><img src="image/dreamworks.png" alt=""></a>
+                        <a href="#"><img src="image/dreamworks.png" alt="title-image"></a>
                         <span class="partner-tooltip">dreamworks</span>
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <div class="testimonial-carousel">
+        <!-- <div class="testimonial-carousel">
             <div class="quote twitter-quote">
                 <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
                 <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
@@ -293,6 +299,27 @@
                 <span class="time-quote">about 1 hour ago</span>
             </div>
             <div class="quote twitter-quote">
+                <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
+                <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
+                <div class="author-quote twitter-author">_ Mark Hain</div>
+                <span class="time-quote">about 1 hour ago</span>
+            </div>
+        </div> -->
+
+        <div class="owl-carousel owl-theme">
+            <div class="twitter-quote">
+                <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
+                <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
+                <div class="author-quote twitter-author">_ Mark Hain</div>
+                <span class="time-quote">about 1 hour ago</span>
+            </div>
+            <div class="twitter-quote">
+                <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
+                <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
+                <div class="author-quote twitter-author">_ Mark Hain</div>
+                <span class="time-quote">about 1 hour ago</span>
+            </div>
+            <div class="twitter-quote">
                 <div class="icon-quote twitter-icon"><span class="fa fa-twitter"></span></div>
                 <h3 class="sub-quote">fringilla @<a href="#"><span>elijah<span></a>, nec venenatis sem posuere quis. Sed sed faucibus ligula.</h3>
                 <div class="author-quote twitter-author">_ Mark Hain</div>
@@ -304,7 +331,7 @@
     <div class="block" id="section-service">
         <div class="tittle-sub">
             <div class="container">
-                <h3 class="name1"><a href="#">SERVICES</a></h3>
+                <h3 class="name1"><a href="#">services</a></h3>
                 <h4>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h4>
             </div>
         </div>
@@ -313,13 +340,13 @@
             <div class="row">    
                 <div class="col-md-6">
                     <div class="services-item">
-                        <div class="service-icon"><img src="image/i-clipboard.png" alt=""></div>
+                        <div class="service-icon"><img src="image/i-clipboard.png" alt="title-image"></div>
                         <h3 class="service-name">SUSPENDISSE NEC PHARETRA</h3>
                         <span class="service-info">Quisque in dolor quis metus viverra gravida nec ut ante. Praesent a blandit nisl. Quisque aliquet nisl vitae urna vulputate in malesuada. Sed non tortor euismod, ullamcorper neque eget, laoreet erat. Quisque porta, ante eget ultrices ultrices, purus odio ultrices dolor, seddle blandit dolor elit eu tortor. Nunc sodales, leo eget condimentum dapibus, nisl magna tempor quam.</span>
                     </div>
 
                     <div class="services-item">
-                        <div class="service-icon"><img src="image/i-lightbulb.png" alt=""></div>
+                        <div class="service-icon"><img src="image/i-lightbulb.png" alt="title-image"></div>
                         <h3 class="service-name">CONSECTETUR ADIPISCING ELIT</h3>
                         <span class="service-info">Quisque in dolor quis metus viverra gravida nec ut ante. Praesent a blandit nisl. Quisque aliquet nisl vitae urna vulputate in malesuada. Sed non tortor euismod, ullamcorper neque eget, laoreet erat. Quisque porta, ante eget ultrices ultrices, purus odio ultrices dolor, seddle blandit dolor elit eu tortor. Nunc sodales, leo eget condimentum dapibus, nisl magna tempor quam.</span>
                     </div>
@@ -327,13 +354,13 @@
 
                 <div class="col-md-6">
                     <div class="services-item">
-                        <div class="service-icon"><img src="image/i-tablet.png" alt=""></div>
+                        <div class="service-icon"><img src="image/i-tablet.png" alt="title-image"></div>
                         <h3 class="service-name">VESTIBULUM ANTE IPSUM</h3>
                         <span class="service-info">Suspendisse orci turpis, rutrum tincidunt erat at, interdumeniiaculis nisi. Sed tincidunt feugiat purus. Sed placerat justo ette mauris pharetra, a feugiat erat pulvinar. Sed eleifend urna id urna luctus, at posuere eros euismod. Vivamus eget ante egestas, tempor diam mollis, an porttitor lectus. Nam accumsan lacinia vehicula. Duis semper placerat odio quis bibendum varius quis.</span>
                     </div>
                     
                     <div class="services-item">
-                        <div class="service-icon"><img src="image/i-clipboard.png" alt=""></div>
+                        <div class="service-icon"><img src="image/i-clipboard.png" alt="title-image"></div>
                         <h3 class="service-name">ETIAM BIBENDUM URNA MAURIS</h3>
                         <span class="service-info">Quisque in dolor quis metus viverra gravida nec ut ante. Praesent a blandit nisl. Quisque aliquet nisl vitae urna vulputate in malesuada. Sed non tortor euismod, ullamcorper neque eget, laoreet erat. Quisque porta, ante eget ultrices ultrices, purus odio ultrices dolor, seddle blandit dolor elit eu tortor. Nunc sodales, leo eget condimentum dapibus, nisl magna tempor quam.</span>
                     </div>
@@ -344,7 +371,7 @@
                 <span>WHAT CLIENTS SAY ABOUT US</span>
             </div>
 
-            <h2 class="title-fun-fact">HERE’S SOME FEEDBACKS WE GOT FROM CLIENTS</h2>
+            <h2 class="title-fun-fact">here's some feedbacks we got form clients</h2>
                         
             <div class="row">
                 <div class="col-md-3">
@@ -354,7 +381,7 @@
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-avatar">
-                                <img src="image/avatar1.png" alt="">
+                                <img src="image/avatar1.png" alt="title-image">
                             </div>
                             <div class="testimonial-info">
                                 <strong class="testimonial-info-name">John Doe</strong>
@@ -370,7 +397,7 @@
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-avatar">
-                                <img src="image/avatar2.png" alt="">
+                                <img src="image/avatar2.png" alt="title-image">
                             </div>
                             <div class="testimonial-info">
                                 <strong class="testimonial-info-name">David Doe</strong>
@@ -386,7 +413,7 @@
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-avatar">
-                                <img src="image/avatar3.png" alt="">
+                                <img src="image/avatar3.png" alt="title-image">
                             </div>
                             <div class="testimonial-info">
                                 <strong class="testimonial-info-name">John Doe</strong>
@@ -402,7 +429,7 @@
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-avatar">
-                                <img src="image/avatar4.png" alt="">
+                                <img src="image/avatar4.png" alt="title-image">
                             </div>
                             <div class="testimonial-info">
                                 <strong class="testimonial-info-name">Frank Doe</strong>
@@ -423,7 +450,7 @@
     <div class="block" id="section-portfolio">
         <div class="tittle-sub">
             <div class="container">
-                <h3 class="name1"><a href="#">PORTFOLIO</a></h3>
+                <h3 class="name1"><a href="#">portfolio</a></h3>
                 <h4>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h4>
             </div>
         </div>
@@ -439,18 +466,18 @@
             </div>
 
             <div class="portfolio-content">
-                <a class="por-item web-design photography" href="#"><img src="image/img1.jpg" alt=""></a>
-                <a class="por-item photography" href="#"><img src="image/img2.jpg" alt=""></a>
-                <a class="por-item branding" href="#"><img src="image/img3.jpg" alt=""></a>
-                <a class="por-item branding" href="#"><img src="image/img4.jpg" alt=""></a>
-                <a class="por-item web-design branding" href="#"><img src="image/img5.jpg" alt=""></a>
-                <a class="por-item photography" href="#"><img src="image/img6.jpg" alt=""></a>
-                <a class="por-item web-design" href="#"><img src="image/img7.jpg" alt=""></a>
-                <a class="por-item photography branding" href="#"><img src="image/img8.jpg" alt=""></a>
-                <a class="por-item branding" href="#"><img src="image/img9.jpg" alt=""></a>
-                <a class="por-item web-design branding" href="#"><img src="image/img10.jpg" alt=""></a>
-                <a class="por-item web-design photography" href="#"><img src="image/img11.jpg" alt=""></a>
-                <a class="por-item web-design photography branding" href="#"><img src="image/img12.jpg" alt=""></a>
+                <a class="por-item web-design photography" href="#"><img src="image/img1.jpg" alt="title-image"></a>
+                <a class="por-item photography" href="#"><img src="image/img2.jpg" alt="title-image"></a>
+                <a class="por-item branding" href="#"><img src="image/img3.jpg" alt="title-image"></a>
+                <a class="por-item branding" href="#"><img src="image/img4.jpg" alt="title-image"></a>
+                <a class="por-item web-design branding" href="#"><img src="image/img5.jpg" alt="title-image"></a>
+                <a class="por-item photography" href="#"><img src="image/img6.jpg" alt="title-image"></a>
+                <a class="por-item web-design" href="#"><img src="image/img7.jpg" alt="title-image"></a>
+                <a class="por-item photography branding" href="#"><img src="image/img8.jpg" alt="title-image"></a>
+                <a class="por-item branding" href="#"><img src="image/img9.jpg" alt="title-image"></a>
+                <a class="por-item web-design branding" href="#"><img src="image/img10.jpg" alt="title-image"></a>
+                <a class="por-item web-design photography" href="#"><img src="image/img11.jpg" alt="title-image"></a>
+                <a class="por-item web-design photography branding" href="#"><img src="image/img12.jpg" alt="title-image"></a>
             </div>
         </div>
     </div>
@@ -458,7 +485,7 @@
     <div class="block" id="section-pricing">
         <div class="tittle-sub">
             <div class="container">
-                <h3 class="name1"><a href="#">PRICING</a></h3>
+                <h3 class="name1"><a href="#">pricing</a></h3>
                 <h4>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h4>
             </div>
         </div>
@@ -484,7 +511,7 @@
                             <li><span class="stick fa fa-times"></span> No Yearly Fees </li>
                         </ul>
                         <div class="price">
-                            <a href="" class="pri-sign">
+                            <a href="#" class="pri-sign">
                                 <span class="stick-like fa fa-thumbs-o-up"></span> SIGN UP TODAY
                             </a>
                         </div>
@@ -509,7 +536,7 @@
                             <li><span class="stick fa fa-times"></span> No Yearly Fees </li>
                         </ul>
                         <div class="price">
-                            <a href="" class="pri-sign">
+                            <a href="#" class="pri-sign">
                                 <span class="stick-like fa fa-thumbs-o-up"></span> SIGN UP TODAY
                             </a>
                         </div>
@@ -534,7 +561,7 @@
                             <li><span class="stick fa fa-check"></span> No Yearly Fees </li>
                         </ul>
                         <div class="price">
-                            <a href="" class="pri-sign">
+                            <a href="#" class="pri-sign">
                                 <span class="stick-like fa fa-thumbs-o-up"></span> SIGN UP TODAY
                             </a>
                         </div>
@@ -547,9 +574,9 @@
             <h3 class="pricing-title">KEEP IN TOUCH</h3>
             <h4 class="pricing-adress">121 King Street, Melbourne, Victoria 3000, Austrailia</h4>
             <div class="pricing-contact">
-                <a href="">Call Us: +61 6 5929 1838</a>
+                <a href="#">Call Us: +61 6 5929 1838</a>
                 <span>&bull;</span>
-                <a href="">Email: info@elijah.com</a>
+                <a href="#">Email: info@elijah.com</a>
             </div>
         </div>
     </div>
@@ -598,10 +625,10 @@
                         <h3 class="widget-title">Recent Post</h3>
                         <dl class="recent-post">
                             <div class="post-re">
-                                <a href="#"><img src="image/ft.png" alt=""></a>
+                                <a href="#"><img src="image/ft.png" alt="title-image"></a>
                                 <div class="posts">
                                     <dt>
-                                        <a href="">Fusce neque erat, tempus at iaculis eu, sollicitudin quis lorem.</a>
+                                        <a href="#">Fusce neque erat, tempus at iaculis eu, sollicitudin quis lorem.</a>
                                     </dt>
                                     <dd>
                                         March 12, 2014
@@ -609,10 +636,10 @@
                                 </div>
                             </div>
                             <div class="post-re">
-                                <a href="#"><img src="image/ft2.png" alt=""></a>
+                                <a href="#"><img src="image/ft2.png" alt="title-image"></a>
                                 <div class="posts">
                                     <dt>
-                                        <a href="">Fusce neque erat, tempus at iaculis eu, sollicitudin quis lorem.</a>
+                                        <a href="#">Fusce neque erat, tempus at iaculis eu, sollicitudin quis lorem.</a>
                                     </dt>
                                     <dd>
                                         March 12, 2014
@@ -620,10 +647,10 @@
                                 </div>
                             </div>
                             <div class="post-re">
-                                <a href="#"><img src="image/ft3.png" alt=""></a>
+                                <a href="#"><img src="image/ft3.png" alt="title-image"></a>
                                 <div class="posts">
                                     <dt>
-                                        <a href="">Fusce neque erat, tempus at iaculis eu, sollicitudin quis lorem.</a>
+                                        <a href="#">Fusce neque erat, tempus at iaculis eu, sollicitudin quis lorem.</a>
                                     </dt>
                                     <dd>
                                         March 12, 2014
@@ -635,28 +662,28 @@
                     <div class="col-md-3 content-ft">
                         <h3 class="widget-title">TAGS</h3>
                         <div class="keywood">
-                            <a href="">Morden</a>
-                            <a href="">Freya</a>
-                            <a href="">Flat</a>
-                            <a href="">Responsive</a>
-                            <a href="">Themeforest</a>
-                            <a href="">Web Design</a>
-                            <a href="">Clean</a>
-                            <a href="">Elegant</a>
-                            <a href="">Minimalist</a>
-                            <a href="">Graphic Design</a>
+                            <a href="#">Morden</a>
+                            <a href="#">Freya</a>
+                            <a href="#">Flat</a>
+                            <a href="#">Responsive</a>
+                            <a href="#">Themeforest</a>
+                            <a href="#">Web Design</a>
+                            <a href="#">Clean</a>
+                            <a href="#">Elegant</a>
+                            <a href="#">Minimalist</a>
+                            <a href="#">Graphic Design</a>
                         </div>
                     </div>
                     <div class="col-md-3 content-ft">
                         <h3 class="widget-title flickr">FLICKR GALLERY</h3>
-                        <a href="" class="flickr-img"><img src="image/1.png"></a>
-                        <a href="" class="flickr-img"><img src="image/2.png"></a>
-                        <a href="" class="flickr-img"><img src="image/3.png"></a>
-                        <a href="" class="flickr-img"><img src="image/4.png"></a>
-                        <a href="" class="flickr-img"><img src="image/5.png"></a>
-                        <a href="" class="flickr-img"><img src="image/6.png"></a>
-                        <a href="" class="flickr-img"><img src="image/7.png"></a>
-                        <a href="" class="flickr-img"><img src="image/8.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/1.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/2.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/3.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/4.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/5.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/6.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/7.png"></a>
+                        <a href="#" class="flickr-img"><img src="image/8.png"></a>
                     </div>
                 </div>
             </div>

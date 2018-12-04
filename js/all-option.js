@@ -111,6 +111,14 @@ function slide() {
     });
 }
 
+//slides
+function owlCarousel(){
+    jQuery( '.owl-carousel' ).owlCarousel({
+        items: 1,
+        dots: true,
+    });
+}
+
 
 (function($) {
     $( document ).ready( function() {
@@ -118,11 +126,13 @@ function slide() {
             navFixed();
             gallery();
             progressBar();
+            owlCarousel();
         } );
 
         toggleMenu();
         navScroll();
         slide();
+        
     } );
 
     // Menu tren mobile.
